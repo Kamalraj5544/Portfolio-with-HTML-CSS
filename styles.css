@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#navbar {
+  background-color: #be3144;
+  position: fixed;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+#navbar > ul {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5%;
+}
+
+#navbar > ul > li {
+  list-style: none;
+  padding: 0 10px 0 10px;
+}
+
+#navbar > ul > li > a {
+  text-decoration: none;
+  color: black;
+  padding: 20%;
+  border-radius: 8px;
+}
+
+#navbar > ul > li > a:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+#welcome-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    text-align: center;
+    transition: 0.3s;
+    
+}
+
+.about-content > h1 {
+    color: aliceblue;
+    font-size: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    font-style: oblique;
+}
+
+.about-content > p {
+    font-size: x-large;
+    color:#be3144;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#projects{
+  background-color: #45567d;
+  padding: 35px;
+  width: 100vw;
+  transition: 0.3s;
+}
+
+#projects > h3{
+  font-size: xx-large;
+  text-align: center;
+  padding: 35px;
+  color: azure;
+  text-decoration-line: underline;
+}
+
+.projects-grid{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.projects-grid > a {
+  text-align: center;
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 4px;
+}
+
+.projects-grid > a > p{
+  background-color:#303841;
+  padding: 8px;
+  border-radius: 8px
+}
+
+.code{
+  display: none;
+}
+
+.project-title:hover > .code{
+  display: inline;
+  color:#be3144;
+  
+}
+
+#contact {
+  text-align: center;
+  background-color: #303841;
+  padding: 30px;
+  color: whitesmoke;
+  width: 100vw
+}
+
+#contact > h3{
+  padding: 20px 20px 0 20px;
+  font-size: 2.8em;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#contact > p {
+  font-size:medium;
+  padding-bottom: 25px;
+}
+
+#profiles{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 20vh;
+}
+
+#profiles a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: bolder;
+  font-size: 1.25em;
+  transition: 0.3s ease-out;
+}
+
+#profiles > a:hover{
+  transform: translateY(10px);
+}
+
+@media  (max-width: 768px) {
+  #projects{
+    padding: 3px;
+  }
+
+  #projects > h3{
+    font-size: small;
+  }
+
+  #contact{
+    font-size: small;
+    padding: 3px;
+  }
+
+  #profiles{
+    flex-wrap: wrap;
+  }
+
+  #contact > h3{
+    font-size: 1.75em;
+  }
+
+  #contact > p {
+    font-size: small;
+  }
+}
+
+
